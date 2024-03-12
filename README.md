@@ -1,4 +1,5 @@
 # route-graph
+
 CLI tool for creating graphs of routes.
 
 This tool simply wraps the example of [TCP traceroute](https://scapy.readthedocs.io/en/latest/usage.html#tcp-traceroute-2)
@@ -31,7 +32,6 @@ $ sudo ./route-graph --help
 ```
 
 The graph could then be found in the current directory. The format is `png`.
-
 
 ## License
 
