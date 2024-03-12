@@ -1,6 +1,11 @@
 # route-graph
 CLI tool for creating graphs of routes.
 
+This tool simply wraps the example of [TCP traceroute](https://scapy.readthedocs.io/en/latest/usage.html#tcp-traceroute-2)
+which is mentioned in the `scapy` documentation.
+
+## Requirements
+
 You will need `graphviz` to be installed. If `graphviz` is not available
 on your system the graph can be created.
 
