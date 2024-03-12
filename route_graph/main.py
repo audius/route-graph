@@ -6,15 +6,15 @@ import typer
 from scapy.all import traceroute
 from typing_extensions import Annotated
 
-app = typer.Typer()
+from route_graph.exceptions import BinaryNotFoundError
 
-path = shutil.which("dot")
+app = typer.Typer()
 
 
 def validate(address: str):
     """Check if graphviz is available and if IP address is valid."""
-    if path is None:
-        typer.echo("graphviz is not installed")
+    if shutil.which("dot") is None:
+        raise BinaryNotFoundError("graphviz is not installed")
 
     try:
         ipaddress.ip_address(address)
