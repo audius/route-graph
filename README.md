@@ -12,6 +12,28 @@ on your system the graph can be created.
 
 `route-graph` has to be executed with `sudo`.
 
+## Installation
+
+The package is available in the [Python Package Index](https://pypi.org/project/route-graph/).
+
+```bash
+$ pip3 install route-graph --user
+```
+
+To get the lastest state:
+
+```bash
+$ pip install git+https://github.com/audiusGmbH/route-graph.git
+```
+
+For Nix or NixOS users is a [package](https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=route-graph)
+available in Nixpkgs. Keep in mind that the lastest releases might only
+be present in the ``unstable`` channel.
+
+```bash
+$ nix-env -iA nixos.route-graph
+```
+
 ## Usage
 
 ```bash
