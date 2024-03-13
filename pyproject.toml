@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "route-graph"
-version = "0.1.0"
-description = "CLI tool for creating graphs of routes"
+version = "0.2.1"
+description = "Tool for creating graphs of routes"
 authors = ["Fabian Affolter <mail@fabian-affolter.ch>"]
 readme = "README.md"
 license = "MIT"
