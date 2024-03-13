@@ -1,6 +1,8 @@
 """Main part of route-graph."""
 import ipaddress
 import shutil
+from pathlib import Path
+from typing import Optional
 
 import typer
 from scapy.all import traceroute
@@ -29,8 +31,15 @@ def callback():
 
 
 @app.command()
-def graph(target: Annotated[str, typer.Argument(callback=validate)]):
+def graph(
+    target: Annotated[str, typer.Argument(callback=validate)],
+    path: Annotated[
+        Optional[Path],
+        typer.Option(help="Path to store the exported files"),
+    ] = ".",
+):
     """Create a graph from traceroute results."""
     typer.echo("Collect details ...")
     res, unans = traceroute([target], dport=[80, 443], maxttl=20, retry=-2)
-    res.graph(target=f"> {target}-graph.png")
+    output_string = Path(path) / Path(f"{target}.png")
+    res.graph(target=f"> {output_string}")
