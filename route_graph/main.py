@@ -12,6 +12,8 @@ from route_graph.exceptions import BinaryNotFoundError
 
 app = typer.Typer()
 
+__version__ = "0.2.1"
+
 
 def validate(address: str):
     """Check if graphviz is available and if IP address is valid."""
@@ -25,8 +27,19 @@ def validate(address: str):
     return address
 
 
+def version(value: bool):
+    """Show version."""
+    if value:
+        typer.echo(f"Version: {__version__}")
+        raise typer.Exit()
+
+
 @app.callback()
-def callback():
+def callback(
+    version: Annotated[
+        Optional[bool], typer.Option("--version", callback=version)
+    ] = None,
+):
     """Tool to draw a graph of traceroute results."""
 
 
