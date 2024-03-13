@@ -16,10 +16,7 @@ __version__ = "0.2.1"
 
 
 def validate(address: str):
-    """Check if graphviz is available and if IP address is valid."""
-    if shutil.which("dot") is None:
-        raise BinaryNotFoundError("graphviz is not installed")
-
+    """Check if IP address is valid."""
     try:
         ipaddress.ip_address(address)
     except ValueError:
@@ -41,6 +38,8 @@ def callback(
     ] = None,
 ):
     """Tool to draw a graph of traceroute results."""
+    if shutil.which("dot") is None:
+        raise BinaryNotFoundError("graphviz is not installed")
 
 
 @app.command()
