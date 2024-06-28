@@ -5,6 +5,12 @@ CLI tool for creating graphs of routes.
 This tool simply wraps the example of [TCP traceroute](https://scapy.readthedocs.io/en/latest/usage.html#tcp-traceroute-2)
 which is mentioned in the `scapy` documentation.
 
+```bash
+# scapy
+>>> res, unans = traceroute(["target"], dport=[22, 80, 443], maxttl=20, retry=-2)
+>>> res.graph(target="> target.png")
+```
+
 ## Requirements
 
 You will need `graphviz` to be installed. If `graphviz` is not available
