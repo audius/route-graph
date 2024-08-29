@@ -14,7 +14,7 @@ which is mentioned in the `scapy` documentation.
 ## Requirements
 
 You will need `graphviz` to be installed. If `graphviz` is not available
-on your system the graph can be created.
+on your system the graph can not be created.
 
 `route-graph` has to be executed with `sudo`.
 
