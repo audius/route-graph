@@ -2,7 +2,7 @@
 name = "route-graph"
 version = "0.2.2"
 description = "Tool for creating graphs of routes"
-authors = ["Fabian Affolter <mail@fabian-affolter.ch>"]
+authors = ["Fabian Affolter <fabian-affolter@audius.de>"]
 readme = "README.md"
 license = "MIT"
 keywords = ["traceroute", "graph", "routes"]
