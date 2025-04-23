@@ -8,7 +8,7 @@ which is mentioned in the `scapy` documentation.
 ```bash
 # scapy
 >>> res, unans = traceroute(["target"], dport=[22, 80, 443], maxttl=20, retry=-2)
->>> res.graph(target="> target.png")
+>>> res.graph(target="> target.svg")
 ```
 
 ## Requirements
