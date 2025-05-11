@@ -53,5 +53,5 @@ def graph(
     """Create a graph from traceroute results."""
     typer.echo("Collect details ...")
     res, unans = traceroute([target], dport=[80, 443], maxttl=20, retry=-2)
-    output_string = Path(path) / Path(f"{target}.png")
+    output_string = Path(path) / Path(f"{target}.svg")
     res.graph(target=f"> {output_string}")
