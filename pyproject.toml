@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "route-graph"
-version = "0.2.2"
+version = "0.3.0"
 description = "Tool for creating graphs of routes"
 authors = ["Fabian Affolter <fabian-affolter@audius.de>"]
 readme = "README.md"
