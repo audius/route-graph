@@ -16,7 +16,7 @@ scapy = "^2.7.0"
 typing-extensions = "^4.10.0"
 
 [poetry.group.dev.dependencies]
-black = "^24.3"
+black = "^25.3"
 isort = "^5.13"
 
 [tool.poetry.scripts]
