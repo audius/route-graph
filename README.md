@@ -59,7 +59,7 @@ $ sudo ./route-graph --help
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 ```
 
-The graph could then be found in the current directory. The format is `png`.
+The graph could then be found in the current directory. The format is `svg`.
 
 ## License
 
