@@ -15,7 +15,7 @@ typer = "^0.24"
 scapy = "^2.7.0"
 typing-extensions = "^4.10.0"
 
-[tool.poetry.group.dev.dependencies]]
+[tool.poetry.group.dev.dependencies]
 black = "^25.3"
 isort = "^5.13"
 
