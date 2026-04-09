@@ -16,7 +16,6 @@ scapy = "^2.7.0"
 typing-extensions = "^4.10.0"
 
 [tool.poetry.group.dev.dependencies]
-black = "^25.3"
 isort = "^5.13"
 pytest = "^8.0"
 pytest-mock = "^3.14"
